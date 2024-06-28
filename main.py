@@ -17,11 +17,12 @@ load_dotenv()
 pb = PushBullet(os.getenv('PUSH_BULLET_ACCESS_TOKEN'))
 CHAT_DIR = os.getenv('CHAT_DIRECTORY')
 EXCEL_DIR = os.getenv('SPREADSHEET_DIRECTORY')
+SAVE_DIR = os.getenv("SAVES_DIRECTORY")
 LAST_LINES = os.getenv('CHECK_LAST_LINES')
 CHATS_TO_EXTRAPOLATE = os.getenv('CHATS_TO_EXTRAPOLATE')
 
 #Directory existence check
-path_check([CHAT_DIR, EXCEL_DIR])
+path_check([CHAT_DIR, EXCEL_DIR, SAVE_DIR])
 
 #Converting Chats_To_Extrapolate to a readable format
 extrapolate_count = []

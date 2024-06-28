@@ -31,5 +31,5 @@ else:
     ws.Cells(current_row, current_column).Offset(1,4).Value = data["Product"]
     
     current_row += 1
-  
+  wb.SaveAs('Save1.xlsx')
   print("No more data to process")
