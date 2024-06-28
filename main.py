@@ -28,7 +28,7 @@ path_check([CHAT_DIR, EXCEL_DIR, SAVE_DIR])
 extrapolate_count = []
 CHATS_TO_EXTRAPOLATE = CHATS_TO_EXTRAPOLATE.replace(" ", "").split("-")
 if len(CHATS_TO_EXTRAPOLATE) == 1:
-  extrapolate_count =  range(int(CHATS_TO_EXTRAPOLATE[0]))
+  extrapolate_count =  range(int(CHATS_TO_EXTRAPOLATE[0])-1, int(CHATS_TO_EXTRAPOLATE[0]))
 else:
   extrapolate_count = range(int(CHATS_TO_EXTRAPOLATE[0])-1, int(CHATS_TO_EXTRAPOLATE[1]))
 
